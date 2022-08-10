@@ -1,40 +1,81 @@
 @extends('layouts.navbar')
 @section('content')
+<link rel="stylesheet" href="{{ asset('css/welcome.css')}}">
+<script rel="stylesheet" src="{{ asset('js/welcome.js')}}" defer></script>
 
-<div class="uk-position-relative uk-visible-toggle data-uk-slider=" {infinite: true}"" tabindex="-1" uk-slideshow="animation: push">
+<section class="slider-pages">
 
-    <ul class="uk-slideshow-items">
-        <li>
-            <img src="{{asset('images/Share_Smiles_logo.png')}}" alt="" uk-cover>
-            <div class="uk-position-center uk-position-small uk-text-center uk-light">
-                <h2 class="uk-margin-remove">Center</h2>
-                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <article class="js-scrolling__page js-scrolling__page-1 js-scrolling--active">
+        <div class="slider-page slider-page--left">
+            <div class="slider-page--skew">
+                <div class="slider-page__content">
+                </div>
             </div>
-        </li>
-        <li>
-            <img src="{{asset('images/pic2.png')}}" alt="" uk-cover>
-            <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
-                <h3 class="uk-margin-remove">Bottom</h3>
-                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="slider-page slider-page--right">
+            <div class="slider-page--skew">
+                <div class="slider-page__content">
+                    <h1 class="slider-page__title slider-page__title--big white-text">
+                        Save, Heal and Give them hope...
+                    </h1>
+                    <h2 class="slider-page__title white-text">
+                        <u>ShareTheSmile</u>
+                        Foundation
+                    </h2>
+                    <!-- <p class="slider-page__description grey-text">
+                        Please scroll down or press the down arrow on your keyboard
+                    </p> -->
+                </div>
             </div>
-        </li>
-    </ul>
-
-    <div class="uk-light">
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-    </div>
-
-</div>
+        </div>
+    </article>
 
 
+    <article class="js-scrolling__page js-scrolling__page-2">
+        <div class="slider-page slider-page--left">
+            <div class="slider-page--skew">
+                <div class="slider-page__content">
+                    <h1 class="slider-page__title second-slide-text">
+                        No one can take you that one ...
+                    </h1>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-page slider-page--right">
+            <div class="slider-page--skew">
+                <div class="slider-page__content">
+                </div>
+            </div>
+        </div>
+    </article>
 
 
-    <!-- <div class="carousel carousel-slider"> -->
-    <!-- <a class="carousel-item" href="#one!"><img src="{{asset('images/pic2.png')}}" height="400"></a>
-    <a class="carousel-item" href="#two!"><img src="{{asset('images/Share_Smiles_logo.png')}}"></a>
-    <a class="carousel-item" href="#three!"><img src="{{asset('images/pic2.png')}}"></a>
-    <a class="carousel-item" href="#four!"><img src="{{asset('images/pic2.png')}}"></a>
-    <a class="carousel-item" href="#five!"><img src="{{asset('images/pic2.png')}}"></a>
-  </div> -->
-    @endsection
+    <article class="js-scrolling__page js-scrolling__page-3">
+        <div class="slider-page slider-page--left">
+            <div class="slider-page--skew">
+                <div class="slider-page__content">
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-page slider-page--right">
+            <div class="slider-page--skew">
+                <div class="slider-page__content">
+                    <h1 class="slider-page__title white-text">
+                        Final is just the beginning
+                    </h1>
+                    <p class="slider-page__description">
+                        Feel free to follow us on <a class="slider-page__link" href="https://twitter.com/WispProxy" target="_blank">Twitter</a>
+                        and check of <a class="slider-page__link" href="https://codepen.io/WispProxy/pens/public" target="_blank">my other works</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+</section>
+
+@endsection

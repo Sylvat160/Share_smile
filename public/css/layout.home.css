@@ -28,6 +28,10 @@ body {
     text-decoration: none;
 }
 
-.ppp{
-    height: 100px !important;
+.m25{
+    margin:0 150px;
+
+}
+.page-footer{
+    background:#2d7cf5;
 }
