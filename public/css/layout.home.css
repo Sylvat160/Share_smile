@@ -1,0 +1,33 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.menu-items {
+    font-size: large;
+    font-weight: bold;
+}
+.h-150 {
+    height: 150px !important;
+}
+.liste {
+    position: relative;
+    top: 25%;
+    font-size: large;
+    font-weight: bold;
+}
+
+.recherche{
+    position: relative;
+    top: 30px;
+    right: 10px;
+}
+.nav-wrapper li a:hover, #mobile-demo li a:hover {
+    background: #45a8f8;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.ppp{
+    height: 100px !important;
+}
